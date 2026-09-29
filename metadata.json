@@ -1,0 +1,7 @@
+{
+  "name": "바이브 카페 (Vibe Cafe)",
+  "description": "따뜻한 감성의 바이브 카페 온라인 주문서",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
