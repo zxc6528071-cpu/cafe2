@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: '맑은 고딕', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+    background-color: #faf6f0;
+    color: #4a3728;
+  }
+}
+
+/* 입력칸 공통 커스텀 스타일 (사용자 지정 세부사항) */
+.cafe-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #dccdc2;
+  background-color: #ffffff;
+  color: #3e2723;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.cafe-input:focus {
+  border-color: #6b4226;
+  box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.18);
+}
+
+.cafe-input::placeholder {
+  color: #a89f91;
+}
+
+/* 커스텀 라디오 & 체크박스 스타일링 */
+.cafe-radio-label, .cafe-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #e7ded4;
+  background-color: #ffffff;
+  transition: all 0.15s ease-in-out;
+  font-size: 14.5px;
+}
+
+.cafe-radio-label:hover, .cafe-checkbox-label:hover {
+  background-color: #f5ede4;
+  border-color: #cbbaa8;
+}
+
+.cafe-radio-label.active, .cafe-checkbox-label.active {
+  border-color: #6b4226;
+  background-color: #f7efe7;
+  color: #6b4226;
+  font-weight: 600;
+}
+
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
